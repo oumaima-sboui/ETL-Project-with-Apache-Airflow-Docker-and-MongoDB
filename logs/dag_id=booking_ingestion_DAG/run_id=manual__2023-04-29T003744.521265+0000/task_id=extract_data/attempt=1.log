@@ -1,0 +1,23 @@
+[2023-04-29T00:37:45.677+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: booking_ingestion_DAG.extract_data manual__2023-04-29T00:37:44.521265+00:00 [queued]>
+[2023-04-29T00:37:45.690+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: booking_ingestion_DAG.extract_data manual__2023-04-29T00:37:44.521265+00:00 [queued]>
+[2023-04-29T00:37:45.691+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-29T00:37:45.692+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-04-29T00:37:45.692+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-29T00:37:45.712+0000] {taskinstance.py:1309} INFO - Executing <Task(PythonOperator): extract_data> on 2023-04-29 00:37:44.521265+00:00
+[2023-04-29T00:37:45.717+0000] {standard_task_runner.py:55} INFO - Started process 1192 to run task
+[2023-04-29T00:37:45.721+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'booking_ingestion_DAG', 'extract_data', 'manual__2023-04-29T00:37:44.521265+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpz1_yvy77']
+[2023-04-29T00:37:45.726+0000] {standard_task_runner.py:83} INFO - Job 76: Subtask extract_data
+[2023-04-29T00:37:45.812+0000] {task_command.py:389} INFO - Running <TaskInstance: booking_ingestion_DAG.extract_data manual__2023-04-29T00:37:44.521265+00:00 [running]> on host 0e14e6a5e88f
+[2023-04-29T00:37:46.086+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=booking_ingestion_DAG
+AIRFLOW_CTX_TASK_ID=extract_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-29T00:37:44.521265+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-29T00:37:44.521265+00:00
+[2023-04-29T00:37:46.149+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-04-29T00:37:46.161+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=booking_ingestion_DAG, task_id=extract_data, execution_date=20230429T003744, start_date=20230429T003745, end_date=20230429T003746
+[2023-04-29T00:37:46.217+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-04-29T00:37:46.277+0000] {taskinstance.py:2596} INFO - 1 downstream tasks scheduled from follow-on schedule check

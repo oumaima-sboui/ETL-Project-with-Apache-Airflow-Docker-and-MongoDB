@@ -1,0 +1,24 @@
+[2023-04-28T13:58:22.776+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: booking_ingestion_DAG.transform_data scheduled__2023-04-27T13:57:58.981384+00:00 [queued]>
+[2023-04-28T13:58:22.789+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: booking_ingestion_DAG.transform_data scheduled__2023-04-27T13:57:58.981384+00:00 [queued]>
+[2023-04-28T13:58:22.789+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-28T13:58:22.790+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-04-28T13:58:22.790+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-28T13:58:22.813+0000] {taskinstance.py:1309} INFO - Executing <Task(PythonOperator): transform_data> on 2023-04-27 13:57:58.981384+00:00
+[2023-04-28T13:58:22.818+0000] {standard_task_runner.py:55} INFO - Started process 266 to run task
+[2023-04-28T13:58:22.822+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'booking_ingestion_DAG', 'transform_data', 'scheduled__2023-04-27T13:57:58.981384+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpktsc6yfj']
+[2023-04-28T13:58:22.830+0000] {standard_task_runner.py:83} INFO - Job 8: Subtask transform_data
+[2023-04-28T13:58:23.023+0000] {task_command.py:389} INFO - Running <TaskInstance: booking_ingestion_DAG.transform_data scheduled__2023-04-27T13:57:58.981384+00:00 [running]> on host 0e14e6a5e88f
+[2023-04-28T13:58:23.380+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=booking_ingestion_DAG
+AIRFLOW_CTX_TASK_ID=transform_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-27T13:57:58.981384+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-27T13:57:58.981384+00:00
+[2023-04-28T13:58:23.382+0000] {logging_mixin.py:137} INFO - ready for transform
+[2023-04-28T13:58:23.383+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-04-28T13:58:23.398+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=booking_ingestion_DAG, task_id=transform_data, execution_date=20230427T135758, start_date=20230428T135822, end_date=20230428T135823
+[2023-04-28T13:58:23.439+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-04-28T13:58:23.465+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check
