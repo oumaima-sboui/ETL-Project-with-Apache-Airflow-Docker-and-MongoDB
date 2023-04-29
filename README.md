@@ -1,4 +1,4 @@
-# ETL Project with Apache Airflow ,Docker and MongoDB   
+# ETL Project with Apache Airflow, Docker and MongoDB   
 
 ## Table of Contents
 
@@ -69,17 +69,17 @@ After running the ETL pipeline, you can verify the execution of the DAG by check
 
 1. Open a browser and navigate to http://localhost:8080. 
 2. Click on the DAGs link in the top menu to view the list of available DAGs.
-3. Find and click on the "etl_pipeline" DAG.
+3. Find and click on the "booking_ingestion_dag" DAG.
 4. You can view the status of each task in the DAG, as well as any logs or errors that occurred during execution.
 
-![Airflow DAGs pipeline](/airflow_dags.png)
+![Airflow DAGs pipeline](https://github.com/oumaima-sboui/ETL-Project-with-Apache-Airflow-Docker-and-MongoDB/blob/master/ETL_Airflow_DAG.JPG)
 
 
 After running the ETL pipeline, you should see the following results:
 
-- ** A final CSV file** named final_output.csv in the processed_data directory, containing the cleaned and merged data from the input CSV files.
+- **A final CSV file** named final_output.csv in the processed_data directory, containing the cleaned and merged data from the input CSV files.
 
-- ** A MongoDB database** named "my_database" with the collections: "my_collection" containing the cleaned and merged data from the input CSV files.
+- **A MongoDB database** named "my_database" with the collections: "my_collection" containing the cleaned and merged data from the input CSV files.
 
 To verify that the pipeline has run successfully, you can check the logs in the logs directory. If there were any errors or warnings during the pipeline execution, they will be recorded in the logs.
 
