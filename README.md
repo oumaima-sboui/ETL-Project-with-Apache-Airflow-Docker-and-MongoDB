@@ -77,7 +77,7 @@ After running the ETL pipeline, you can verify the execution of the DAG by check
 
 After running the ETL pipeline, you should see the following results:
 
-- **A final CSV file** named final_output.csv in the processed_data directory, containing the cleaned and merged data from the input CSV files.
+- **A final CSV file** named processed_data.csv in the processed_data directory, containing the cleaned and merged data from the input CSV files.
 
 - **A MongoDB database** named "my_database" with the collections: "my_collection" containing the cleaned and merged data from the input CSV files.
 
